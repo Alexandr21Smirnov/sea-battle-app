@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.battleship-grid {
+  margin: 2vmin;
+  display: grid;
+  background-color: #0b536d;
+  grid-template-rows: repeat(10, 6.6vmin);
+  grid-template-columns: repeat(10, 6.6vmin);
+}
+
+.battleship-grid div {
+  border: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+

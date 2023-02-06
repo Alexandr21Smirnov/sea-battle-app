@@ -1,0 +1,22 @@
+.wrapper {
+  min-width: 100vh;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.wrapper::before {
+  content: '';
+  background: url(../../assets/bg.jpg) no-repeat center/cover;
+  position: absolute;
+  min-width: 100vh;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+

@@ -1,0 +1,69 @@
+.ship {
+  position: relative;
+  background-color: rgba(204, 204, 204, 0.6);
+}
+
+
+.ship > div {
+  width: 7.6vmin;
+  height: 7.6vmin;
+}
+
+.ship {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(6.6vmin * var(--width, 1));
+  height: calc(6.6vmin * var(--height, 1));
+  border-radius: 5%;
+}
+
+.two-deck-container {
+  --width: 2;
+}
+
+.two-deck-container-vertical {
+  --height: 2;
+  --width: 1;
+}
+
+.three-deck-container {
+  --width: 3;
+}
+
+.three-deck-container-vertical {
+  --height: 3;
+  --width: 1;
+}
+
+.four-deck-container {
+  --width: 4;
+}
+
+.four-deck-container-vertical {
+  --height: 4;
+  --width: 1;
+}
+
+.miss,
+#boom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#boom::after {
+  content: '';
+  position: absolute;
+  border-radius: 100%;
+  width: 2vmin;
+  height: 2vmin;
+}
+
+#boom::after {
+  background-color: red;
+}
+
+#boom {
+  animation: boom .2s ease-out forwards;
+}
+
